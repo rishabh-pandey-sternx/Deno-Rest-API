@@ -1,0 +1,30 @@
+{
+  "name": "deno-api-example",
+  "version": "1.0.0",
+  "description": "Simple CRUD API build with Deno and Attain(Express) using MongoDB",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test",
+    "run": "deno run -A --unstable index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GeekRishabh/Deno-Rest-API.git"
+  },
+  "keywords": [
+    "deno",
+    "API",
+    "REST",
+    "CRUD",
+    "attain",
+    "mongodb",
+    "database",
+    "auth"
+  ],
+  "author": "Geekrishabh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeekRishabh/Deno-Rest-API/issues"
+  },
+  "homepage": "https://github.com/GeekRishabh/Deno-Rest-API#readme"
+}
