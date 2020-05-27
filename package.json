@@ -4,8 +4,26 @@
   "description": "Simple CRUD API build with Deno and Attain(Express) using MongoDB",
   "main": "index.ts",
   "scripts": {
-    "test": "test",
-    "run": "deno run -A --unstable index.ts"
+    "start": "deno run -A --unstable index.ts",
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "release": "ncc build && git add -f dist/",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "jest-circus": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  },
+  "husky": {
+    "skipCI": true,
+    "hooks": {
+      "pre-commit": "npm run build && npm run format"
+    }
   },
   "repository": {
     "type": "git",
@@ -21,7 +39,7 @@
     "database",
     "auth"
   ],
-  "author": "Geekrishabh",
+  "author": "Geekrishabh <Geekrishabh@gmail.com> | GeekyAnts",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GeekRishabh/Deno-Rest-API/issues"

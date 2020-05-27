@@ -10,6 +10,7 @@ import router from "./src/routes/index.ts";
 (async () => {
   const port = APP_PORT;
   const app = new App();
+
   // Logging response method status path time
   app.use(logger);
   // Parsing the request body and save it to request.params
@@ -17,7 +18,7 @@ import router from "./src/routes/index.ts";
   app.use(parser);
   // Serve static files
   // This path must be started from your command line path.
-  app.use(staticServe("./public/", { maxAge: 1000 }));
+  app.use(staticServe("./public/index.html", { maxAge: 1000 }));
   // Mounted All API's
   app.get(`/${API_PREFIX}/${API_VERSION}`, router);
   app.listen({ port, debug: true });

@@ -11,3 +11,4 @@ export const REDIS_QUEUE_PORT = env.REDIS_QUEUE_PORT || 6379;
 export const REDIS_QUEUE_URL = env.REDIS_QUEUE_URL || "127.0.0.1";
 export const REDIS_QUEUE_DB = env.REDIS_QUEUE_DB || 3;
 export const REDIS_QUEUE_PREFIX = env.REDIS_QUEUE_PREFIX || "q";
+export const REDIS_QUEUE_EXPIRY = 1000 * 60 * 60 * 24;
