@@ -6,7 +6,7 @@ Simple CRUD API build with Deno and Attain(Express) using MongoDB
 ### Running Application 
 
 
-deno run --allow-net --allow-write --allow-read --allow-plugin --unstable index.ts
+`deno run --allow-net --allow-write --allow-read --allow-plugin --unstable index.ts`
 
 
 ## Deno Flags
@@ -30,4 +30,4 @@ deno run --allow-net --allow-write --allow-read --allow-plugin --unstable index.
 
 ### Formatting code
 
- deno fmt 
+ `deno fmt` 
