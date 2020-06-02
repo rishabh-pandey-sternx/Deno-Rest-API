@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "deno run -A --unstable index.ts",
+    "heroku-postinstall": "cp .env.example  .env",
     "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",

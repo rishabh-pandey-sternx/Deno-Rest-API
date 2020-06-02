@@ -5883,12 +5883,10 @@
           target = document.querySelector(selector);
         }
 
-        var config = $(target).data(DATA_KEY$5)
-          ? "toggle"
-          : _objectSpread2(
-            _objectSpread2({}, $(target).data()),
-            $(this).data(),
-          );
+        var config = $(target).data(DATA_KEY$5) ? "toggle" : _objectSpread2(
+          _objectSpread2({}, $(target).data()),
+          $(this).data(),
+        );
 
         if (this.tagName === "A" || this.tagName === "AREA") {
           event.preventDefault();
